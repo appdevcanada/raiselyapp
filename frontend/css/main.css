@@ -1,0 +1,177 @@
+/* ********************************
+Filename:     main.css
+Description:  CSS that changes some components behaviours for the index.html
+Author:       Luis Souza
+Contact:      https://appdevcanada.github.io
+Description:  Raisely Sign Up App
+Date:         Oct 08, 2020
+********************************* */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+  font-size: 16px !important;
+  line-height: 1.5;
+  font-family: Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  font-family: Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+label {
+  margin-bottom: 0;
+  color: rgb(101, 101, 101);
+}
+
+#toggle-password:hover {
+  cursor: pointer;
+  color: rgb(233, 70, 70) !important;
+}
+
+button#toggle-password {
+  background: none;
+  border: none;
+  font-weight: 300;
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  outline: none;
+  color: rgb(101, 101, 101);
+}
+
+.modal {
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(199, 199, 199, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.signup {
+  position: fixed;
+  left: calc((100% - 350px)/2);
+  top: calc((100% - 430px)/2);
+  line-height: 1.5rem;
+  text-align: center;
+  z-index: 1100;
+  width: 350px;
+  height: 430px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  box-shadow: 4px 4px 14px  rgb(191, 191, 191), -4px -4px 14px rgb(191, 191, 191);
+}
+
+.btn-signup {
+  width: 310px;
+  border-radius: 25px;
+  color: rgb(245, 245, 245);
+  background-color: rgb(71, 37, 182);
+  box-shadow: 4px 4px 12px rgb(167, 167, 167);
+}
+
+.btn-signup:hover {
+  color: rgb(240, 240, 240);
+  background-color: rgb(97, 59, 217);
+}
+
+.off {
+  transform: translateY(-400%);
+}
+
+.on {
+  transform: translateY(0);
+}
+
+.header-title {
+  text-align: center;
+  padding: 0.6rem;
+  background-color: rgb(97, 59, 217);
+  color: rgb(225, 225, 225);
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.signup-fields {
+  margin: 15px;
+}
+
+.igt {
+  background-color: rgb(227 218 255) !important;
+}
+
+.form-control::placeholder {
+  color: rgb(108, 117, 125);
+  opacity: 0.5;
+}
+
+.formfield {
+  margin-bottom: 25px;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px 5px 0;
+}
+
+.err {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  color: red;
+}
+
+#errmsg {
+  font-size: 0.8rem;
+  color: red;
+  float: left;
+  padding-left: 5px;
+}
+
+.formfield:nth-child(1) {
+  margin-bottom: 0;
+}
+
+.formfield:nth-child(4) {
+  margin-bottom: 25px;
+}
+
+.hidecontent {
+  display: none;
+}
+
+.showcontent {
+  display: block !important;
+}
+
+.container {
+  min-height: 650px;
+  height: 100%;
+  width: 100%;
+}
+
+.fas {
+  color: rgb(255,255, 255);
+}
+
+#logo {
+  transition: all 2s ease-in-out;
+  margin-bottom: 5px;
+}
+
+#logo:hover {
+  transform: rotate(360deg);
+  transition: all 2s ease-in-out;
+}
